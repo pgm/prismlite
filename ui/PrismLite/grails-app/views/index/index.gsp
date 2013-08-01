@@ -81,8 +81,13 @@
 		</style>
 	</head>
 	<body>
-    <g:if test="${last > 0}">
-        <g:link action="index" params="${[count: count, start: last-1]}">Next ${count}</g:link>
+
+    <g:if test="${prevPageSize > 0}">
+        <g:link action="index" params="${[count: count, start: prevFirst]}">Previous ${prevPageSize}</g:link>
+    </g:if>
+
+    <g:if test="${nextPageSize > 0}">
+        <g:link action="index" params="${[count: count, start: last-1]}">Next ${nextPageSize}</g:link>
     </g:if>
 
         <table>

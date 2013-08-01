@@ -20,7 +20,7 @@
     <tr><td>Method</td><td>${record.request.method}</td></tr>
     <tr><td>Content</td><td>${record.request.request}</td></tr>
     <tr><td>Start</td><td>${new Date(record.start)}</td></tr>
-    <tr><td>Duration</td><td>${record.stop-record.start}</td></tr>
+    <tr><td>Duration</td><td>${record.stop-record.start} ms</td></tr>
 </table>
 <h2>Headers</h2>
 <table>
