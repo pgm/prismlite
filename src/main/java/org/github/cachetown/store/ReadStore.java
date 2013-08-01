@@ -22,4 +22,6 @@ public interface ReadStore {
 //    void withIterator(Date startDate, IteratorUser callback);
 
     Date[] getFullDateRange();
+
+    public void close();
 }

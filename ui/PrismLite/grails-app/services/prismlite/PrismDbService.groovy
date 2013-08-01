@@ -9,18 +9,18 @@ class PrismDbService implements InitializingBean {
     static transactional = false
 
     def grailsApplication
-    ReadStore store
+    String path;
 
     void afterPropertiesSet() {
-        String path = grailsApplication.config.prismdb.path
-        store = new Store(new File(path), true)
+        path = grailsApplication.config.prismdb.path
     }
 
-    def getRecords(long firstId, int maxCount) {
+    def getRecords(long firstId, int maxCount, boolean ascending) {
         def results = []
 
+        ReadStore store = new Store(new File(path), true)
 
-        store.withIterator(firstId, false,
+        store.withIterator(firstId, ascending,
                 new IteratorUser() {
                     public Object call(Iterator it) {
                         while (results.size() < maxCount && it.hasNext()) {
@@ -33,10 +33,15 @@ class PrismDbService implements InitializingBean {
 
         );
 
+        store.close();
+
         return results;
     }
 
     def getRecord(long id) {
-        return store.getRecording(id);
+        ReadStore store = new Store(new File(path), true)
+        def record =  store.getRecording(id);
+        store.close()
+        return record
     }
 }

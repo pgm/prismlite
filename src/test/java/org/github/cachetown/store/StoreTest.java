@@ -109,7 +109,7 @@ public class StoreTest {
         });
 
         assertEquals(4, count[0]);
-
+        store.close();
     }
 
 }

@@ -270,17 +270,20 @@ public class Store implements ReadStore, WriteStore {
         Cursor cursor;
         OperationStatus lastStatus;
         boolean ascending;
+        Transaction txn;
 
         public CursorIterator(boolean ascending) {
-            this.ascending =ascending;
+            this.ascending = ascending;
         }
 
         public void startAtId(long firstId) {
             try {
+                txn = env.beginTransaction(null, null);
+
                 byte[] keyBytes = getLongAsBytes(firstId);
                 keyEntry = new DatabaseEntry(keyBytes);
                 valueEntry = new DatabaseEntry();
-                cursor = idToRecordingDb.openCursor(null, null);
+                cursor = idToRecordingDb.openCursor(txn, null);
                 lastStatus = cursor.getSearchKeyRange(keyEntry, valueEntry, LockMode.DEFAULT);
                 if(!ascending) {
                     if(lastStatus == OperationStatus.SUCCESS && !Arrays.equals(keyBytes, keyEntry.getData())) {
@@ -299,8 +302,14 @@ public class Store implements ReadStore, WriteStore {
 
         public void close() {
             try {
-                if (cursor != null)
+                if (cursor != null) {
                     cursor.close();
+                    cursor = null;
+                }
+                if(txn != null) {
+                    txn.abort();
+                    txn = null;
+                }
             } catch (Exception ex) {
                 throw new RuntimeException(ex);
             }
@@ -353,5 +362,17 @@ public class Store implements ReadStore, WriteStore {
     @Override
     public Date[] getFullDateRange() {
         return new Date[0];  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public void close() {
+        try {
+            idToRecordingDb.close();
+            requestToRecordingDb.close();
+            md5ToResponseDb.close();
+            env.close();
+        } catch (Exception ex) {
+            throw new RuntimeException(ex);
+        }
     }
 }
