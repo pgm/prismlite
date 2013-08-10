@@ -82,6 +82,10 @@
 	</head>
 	<body>
 
+    <g:form method="GET">
+        <g:submitButton name="submit" value="Search by URI RegExp"/><g:textField name="uriPattern" style="width: 40em;" value="${uriPatternStr}"/>
+    </g:form>
+
     <g:if test="${prevPageSize > 0}">
         <g:link action="index" params="${[count: count, start: prevFirst]}">Previous ${prevPageSize}</g:link>
     </g:if>
@@ -90,17 +94,24 @@
         <g:link action="index" params="${[count: count, start: last-1]}">Next ${nextPageSize}</g:link>
     </g:if>
 
+    <g:form method="GET">
         <table>
 
-        <tr><th>Id</th><th>Timestamp</th><th>Status</th><th>Method</th><th>URI</th></tr>
+        <tr>
+            <th>Id</th><th>Timestamp</th><th>Status</th><th>Method</th><th>URI</th><th>RespHash</th><th colspan="2"><g:actionSubmit action="compare" value="Compare"/></th>
+        </tr>
         <g:each in="${records}" var="record">
             <tr>
                 <td>
                     <g:link controller="index" action="show" id="${record.id}">${record.id}</g:link>
                 </td>
                 <td><g:formatDate date="${new Date(record.recording.start)}" type="datetime"/></td>
-                <td>${record.recording.response.status}</td><td>${record.recording.request.method}</td><td>${record.recording.request.uri}</td></tr>
+                <td>${record.recording.response.status}</td><td>${record.recording.request.method}</td><td>${record.recording.request.uri}</td>
+                <td>${prismlite.IndexController.getResponseHash(record.recording).substring(0,6)}</td>
+                <td><input type="radio" name="left" value="${record.id}"></td><td><input type="radio" name="right" value="${record.id}"></td>
+            </tr>
         </g:each>
+    </g:form>
     </table>
 	</body>
 </html>

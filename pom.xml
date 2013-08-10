@@ -8,6 +8,7 @@
         run "mvn clean compile assembly:single"
     -->
 
+
     <dependencies>
         <dependency>
             <groupId>log4j</groupId>

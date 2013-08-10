@@ -3,7 +3,10 @@ package prismlite
 import org.github.cachetown.store.*
 
 //import interceptor.msg.Messages.Recording;
-import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.InitializingBean
+
+import java.util.regex.Matcher
+import java.util.regex.Pattern;
 
 class PrismDbService implements InitializingBean {
     static transactional = false
@@ -15,7 +18,7 @@ class PrismDbService implements InitializingBean {
         path = grailsApplication.config.prismdb.path
     }
 
-    def getRecords(long firstId, int maxCount, boolean ascending) {
+    def getRecords(long firstId, int maxCount, boolean ascending, Pattern uriPattern) {
         def results = []
 
         ReadStore store = new Store(new File(path), true)
@@ -24,8 +27,13 @@ class PrismDbService implements InitializingBean {
                 new IteratorUser() {
                     public Object call(Iterator it) {
                         while (results.size() < maxCount && it.hasNext()) {
-                            def next = it.next()
-                            results << next;
+                            IdAndRecording next = it.next()
+
+                            String uri = next.getRecording().getRequest().getUri()
+                            Matcher m = uriPattern.matcher(uri);
+                            if(m.matches()) {
+                                results << next;
+                            }
                         }
                     }
                 }
