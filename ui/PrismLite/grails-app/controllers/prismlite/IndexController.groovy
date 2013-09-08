@@ -12,13 +12,14 @@ import java.util.regex.Pattern
 
 class IndexController {
     def prismDbService
+    RestInterceptorService restInterceptorService
 
     public static String getResponseHash(Messages.Recording recording) {
         byte[] hash = RecordingUtil.getMd5Sum(recording.getResponse().getContent().toByteArray());
         return Hex.encodeHexString(hash);
     }
 
-    def toJson(ByteString buffer){
+    private JSONObject toJson(ByteString buffer){
         String s = new String(buffer.toByteArray());
         if(s.startsWith("{")) {
             return new JSONObject(s);
@@ -31,6 +32,11 @@ class IndexController {
 
             return obj
         }
+    }
+
+    def activeRequests() {
+        Messages.ActiveRequestList list = restInterceptorService.getActiveRequests()
+        [records: list.requestsList]
     }
 
     def compare() {

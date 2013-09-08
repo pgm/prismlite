@@ -2,57 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1216364a-c0a3-4ac2-849f-653eaf298c56" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/store/IdAndRecording.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/store/IteratorUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__junit_junit_4_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_json_json_20090211.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/store/ReadStore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/store/RecordingUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/Replay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../src/test/java/org/github/cachetown/store/StoreTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../src/main/resources/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../src/main/protobuf/messages.proto" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/Blob.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/CachedValue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/Db.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/QueryExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/Service.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/TypedBlob.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/queries/AssayActiveCompounds.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/queries/FetchUrl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/queries/Pubchem.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/store/AbstractStore.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/store/BerkleyDbStore.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/store/BlobMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/store/InMemoryStore.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/store/InstrumentedStore.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/store/MapOfSets.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/test/java/org/github/cachetown/BerkleyTest.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/test/java/org/github/cachetown/ServiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/test/java/org/github/cachetown/StoreTest.groovy" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/store/DbBackedMapOfSets.java" afterPath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/store/Store.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/store/Store.java" afterPath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/store/WriteStore.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/index/activeRequests.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/CacheServer.java" afterPath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/CacheServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../pom.xml" afterPath="$PROJECT_DIR$/../../pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/prismlite/IndexController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/prismlite/IndexController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrismLite-grailsPlugins.iml" afterPath="$PROJECT_DIR$/PrismLite-grailsPlugins.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrismLite.iml" afterPath="$PROJECT_DIR$/PrismLite.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrismLite.iws" afterPath="$PROJECT_DIR$/PrismLite.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/Replay.java" afterPath="$PROJECT_DIR$/../../src/main/java/org/github/cachetown/Replay.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/index/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/index/index.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../src/main/protobuf/messages.proto" afterPath="$PROJECT_DIR$/../../src/main/protobuf/messages.proto" />
     </list>
     <ignored path="PrismLite.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
-    <file path="/Dummy.txt" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1374793672202" ignored="false" />
-    <file path="/IndexController.groovy" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1374802084013" ignored="false" />
-    <file path="/index.gsp" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1374802348248" ignored="false" />
+    <file path="/Dummy.txt" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1378602668934" ignored="false" />
+    <file path="/IndexController.groovy" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1378607523013" ignored="false" />
+    <file path="/index.gsp" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1378608032325" ignored="false" />
     <file path="/UrlMappings.groovy" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1374717344790" ignored="false" />
     <file path="/Store.java" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1374801387131" ignored="false" />
-    <file path="/PrismDbService.groovy" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1374801173233" ignored="false" />
-    <file path="/show.gsp" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1374797023661" ignored="false" />
+    <file path="/PrismDbService.groovy" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1376150489370" ignored="false" />
+    <file path="/show.gsp" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1376153757381" ignored="false" />
     <file path="/IdAndRecording.java" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1374719131995" ignored="false" />
     <file path="/main.gsp" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1374720487586" ignored="false" />
     <file path="/ReadStore.java" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1374797262937" ignored="false" />
     <file path="/StoreTest.java" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1374800972914" ignored="false" />
     <file path="/Replay.java" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1374800946721" ignored="false" />
     <file path="/CacheServer.java" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1374800957705" ignored="false" />
+    <file path="/activeRequests.gsp" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1378608221476" ignored="false" />
+    <file path="/RestInterceptorService.groovy" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1378607403124" ignored="false" />
+    <file path="/BuildConfig.groovy" changelist="1216364a-c0a3-4ac2-849f-653eaf298c56" time="1378605975226" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +47,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -104,6 +83,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -116,27 +96,89 @@
       <file leaf-file-name="IndexController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/prismlite/IndexController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="19" selection-start="399" selection-end="399" vertical-scroll-proportion="-9.782609">
-              <folding />
+            <state line="37" column="0" selection-start="1031" selection-end="1031" vertical-scroll-proportion="-18.826086">
+              <folding>
+                <element signature="e#19#56#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.gsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/index/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="78" selection-start="1718" selection-end="1718" vertical-scroll-proportion="0.7787611">
+            <state line="85" column="4" selection-start="1570" selection-end="1570" vertical-scroll-proportion="-4.8510637">
+              <folding>
+                <marker date="1378608033000" expanded="true" signature="1703:1715" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="55.333332">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/index/show.gsp">
+      <file leaf-file-name="RestInterceptorService.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/prismlite/RestInterceptorService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="44" selection-start="1535" selection-end="1535" vertical-scroll-proportion="-10.085107">
+            <state line="12" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1374797066000" expanded="true" signature="1489:1704" placeholder="{...}" />
+                <element signature="e#19#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="4" selection-start="2821" selection-end="2821" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigBuilder.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.grails/2.2.1/projects/PrismLite/plugins/cache-1.0.1/src/groovy/grails/plugin/cache/ConfigBuilder.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuildConfig.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="53" selection-start="1900" selection-end="1900" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activeRequests.gsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/index/activeRequests.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="18" selection-start="359" selection-end="359" vertical-scroll-proportion="0.4235501">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compare.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/index/compare.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1376153981000" expanded="true" signature="399:537" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -146,33 +188,6 @@
         <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="81" column="2" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="18" selection-start="1372" selection-end="1378" vertical-scroll-proportion="-13.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UrlMappings.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="25" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrismDbService.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/services/prismlite/PrismDbService.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="46" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -198,19 +213,23 @@
       <list>
         <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/index/show.gsp" />
         <option value="$PROJECT_DIR$/web-app/css/main.css" />
         <option value="$PROJECT_DIR$/grails-app/services/prismlite/PrismDbService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/index/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/index/compare.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/prismlite/RestInterceptorService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/prismlite/IndexController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/index/index.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/index/activeRequests.gsp" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="57" />
-    <option name="y" value="149" />
+    <option name="y" value="24" />
     <option name="width" value="1440" />
-    <option name="height" value="757" />
+    <option name="height" value="787" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -256,6 +275,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -264,56 +284,6 @@
               <option name="myItemId" value="PrismLite" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrismLite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grails User Library (PrismLite-grailsPlugins)" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrismLite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grails User Library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrismLite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grails User Library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RestInterceptor-1.0-SNAPSHOT.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -322,38 +292,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PrismLite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrismLite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrismLite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrismLite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrismLite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -372,28 +310,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrismLite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrismLite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -477,15 +393,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrismLite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -504,6 +413,11 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/grails-app/views/index" />
+    </key>
+  </component>
   <component name="RunManager" selected="Grails.Grails:PrismLite">
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
@@ -513,6 +427,27 @@
       <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="false" name="Grails:@grails.project.name@" type="GrailsRunConfigurationType" factoryName="Grails">
@@ -556,7 +491,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="149" width="1440" height="757" extended-state="0" />
+    <frame x="0" y="24" width="1440" height="787" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -568,6 +503,7 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -576,9 +512,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.6703297" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20731707" sideWeight="0.6716642" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -651,36 +586,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/prismlite/IndexController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="43" selection-start="118" selection-end="128" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/index/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="0" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/index/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="4" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1374797066000" expanded="true" signature="1489:1704" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="18" selection-start="1382" selection-end="1388" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="25" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
@@ -691,6 +596,22 @@
     <entry file="file://$PROJECT_DIR$/grails-app/services/prismlite/PrismDbService.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="36" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#19#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="18" selection-start="1372" selection-end="1378" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="2" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -702,46 +623,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/index/compare.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="18" selection-start="1372" selection-end="1378" vertical-scroll-proportion="-13.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/prismlite/PrismDbService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="46" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="23" column="0" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1376153981000" expanded="true" signature="399:537" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/index/show.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="44" selection-start="1535" selection-end="1535" vertical-scroll-proportion="-10.085107">
+        <state line="11" column="44" selection-start="0" selection-end="1739" vertical-scroll-proportion="-0.9574468">
           <folding>
-            <marker date="1374797066000" expanded="true" signature="1489:1704" placeholder="{...}" />
+            <marker date="1376153929000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
+    <entry file="file://$USER_HOME$/.grails/2.2.1/projects/PrismLite/plugins/cache-1.0.1/src/groovy/grails/plugin/cache/ConfigBuilder.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="2" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="53" selection-start="1900" selection-end="1900" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/prismlite/IndexController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="399" selection-end="399" vertical-scroll-proportion="-9.782609">
+        <state line="37" column="0" selection-start="1031" selection-end="1031" vertical-scroll-proportion="-18.826086">
+          <folding>
+            <element signature="e#19#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="4" selection-start="2821" selection-end="2821" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/prismlite/RestInterceptorService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#19#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/prismlite/PrismDbService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="9" selection-start="275" selection-end="308" vertical-scroll-proportion="0.26785713">
+          <folding>
+            <element signature="e#19#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="55.333332">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/index/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="78" selection-start="1718" selection-end="1718" vertical-scroll-proportion="0.7787611">
+        <state line="85" column="4" selection-start="1570" selection-end="1570" vertical-scroll-proportion="-4.8510637">
+          <folding>
+            <marker date="1378608033000" expanded="true" signature="1703:1715" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/index/activeRequests.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="359" selection-end="359" vertical-scroll-proportion="0.4235501">
           <folding />
         </state>
       </provider>
@@ -753,7 +721,7 @@
         <entry key="PrismLite">
           <value>
             <GrailsSettings>
-              <option name="buildConfigCrc" value="-79392254" />
+              <option name="buildConfigCrc" value="-1886849094" />
               <option name="pluginDependenciesCrc" value="1491872367" />
               <option name="properties">
                 <map>

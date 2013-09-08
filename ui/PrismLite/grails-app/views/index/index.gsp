@@ -82,6 +82,8 @@
 	</head>
 	<body>
 
+    <g:link controller="index" action="activeRequests">Show active requests</g:link>
+
     <g:form method="GET">
         <g:submitButton name="submit" value="Search by URI RegExp"/><g:textField name="uriPattern" style="width: 40em;" value="${uriPatternStr}"/>
     </g:form>

@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created with IntelliJ IDEA.
@@ -31,6 +32,9 @@ public class CacheServer extends AbstractHandler {
     final Replay replay;
 
     ArrayBlockingQueue<Messages.Recording> recordingQueue = new ArrayBlockingQueue(1000);
+
+    AtomicInteger nextRequestId = new AtomicInteger();
+    Map<Integer, Messages.ActiveRequest> activeRequests = new HashMap();
 
     public CacheServer(String baseUrl, WriteStore store) {
         this.baseUrl = baseUrl;
@@ -49,7 +53,8 @@ public class CacheServer extends AbstractHandler {
         if (request.getQueryString() != null) {
             uri += "?" + request.getQueryString();
         }
-        log.warn("starting " + uri);
+        int requestId = nextRequestId.getAndIncrement();
+        log.warn("starting "+requestId+" " + uri);
 
         byte[] requestByteArray = readInputStream(request.getInputStream());
 
@@ -74,20 +79,62 @@ public class CacheServer extends AbstractHandler {
                 .setRequest(ByteString.copyFrom(requestByteArray))
                 .addAllHeaders(headers)
                 .build();
+
+        requestStart(requestId, requestRecording);
         Messages.Recording rec = replay.execute(requestRecording);
-        log.warn("finished " + uri);
+        requestFinished(requestId);
+
+        log.warn("finished "+requestId+" " + uri);
         return rec;
+    }
+
+    public void requestStart(int requestId, Messages.RequestRecording requestRecording) {
+        Messages.ActiveRequest active = Messages.ActiveRequest.newBuilder().setRequest(requestRecording).setStart(new Date().getTime()).setRequestId(requestId).build();
+        synchronized (activeRequests) {
+            activeRequests.put(requestId, active);
+        }
+    }
+
+    public void requestFinished(int id) {
+        synchronized (activeRequests) {
+            activeRequests.remove(id);
+        }
     }
 
     @Override
     public void handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        Messages.Recording recording = recordExecution(request);
-        writeRecordedValue(baseRequest, response, recording);
-        try {
-            recordingQueue.put(recording);
-        } catch (InterruptedException ex) {
-            throw new RuntimeException(ex);
+        String requestURI = request.getRequestURI();
+        if(requestURI.startsWith("/rest-debug-ctl/")){
+            handleControlMessage(baseRequest, request, response);
+        } else {
+            Messages.Recording recording = recordExecution(request);
+            writeRecordedValue(baseRequest, response, recording);
+            try {
+                recordingQueue.put(recording);
+            } catch (InterruptedException ex) {
+                throw new RuntimeException(ex);
+            }
         }
+    }
+
+    protected void handleControlMessage(Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException {
+        if(request.getRequestURI().endsWith("/active-requests")) {
+            response.setStatus(HttpServletResponse.SC_OK);
+            response.setContentType("application/octet-stream");
+
+            List<Messages.ActiveRequest> requests;
+            synchronized (activeRequests) {
+                requests = new ArrayList(activeRequests.values());
+            }
+
+            Messages.ActiveRequestList list = Messages.ActiveRequestList.newBuilder().addAllRequests(requests).build();
+            OutputStream outputStream = response.getOutputStream();
+            outputStream.write(list.toByteArray());
+        } else {
+            response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Unrecognized request "+request.getRequestURI());
+        }
+
+        baseRequest.setHandled(true);
     }
 
     private void writeRecordedValue(Request baseRequest, HttpServletResponse response, Messages.Recording recording) throws IOException {
@@ -139,6 +186,7 @@ public class CacheServer extends AbstractHandler {
     public static void main(String[] args) throws Exception {
         if (args.length != 3) {
             System.err.println("Expected parameters: path_to_db port_to_listen_on target_url");
+            System.exit(1);
         }
         startService(args[0], Integer.parseInt(args[1]), args[2]);
     }

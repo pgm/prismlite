@@ -40,7 +40,11 @@ public class Replay {
 
     public Replay() {
         HttpParams params = new BasicHttpParams();
-        ClientConnectionManager cm = new PoolingClientConnectionManager();
+        PoolingClientConnectionManager cm = new PoolingClientConnectionManager();
+
+        cm.setMaxTotal(200);
+        cm.setDefaultMaxPerRoute(200);
+
         httpClient = new DefaultHttpClient(cm, params);
     }
 

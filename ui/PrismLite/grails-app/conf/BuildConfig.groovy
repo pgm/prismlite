@@ -44,6 +44,9 @@ grails.project.dependency.resolution = {
 
     build 'com.google.protobuf:protobuf-java:2.5.0'
 
+
+    build 'org.apache.httpcomponents:httpclient:4.2.4'
+
         // runtime 'mysql:mysql-connector-java:5.1.22'
 	runtime('RestInterceptor:RestInterceptor:1.0-SNAPSHOT') {
 		excludes "jetty-server"

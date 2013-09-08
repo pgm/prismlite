@@ -23,6 +23,16 @@ message Response {
     optional bytes content = 6;
 }
 
+message ActiveRequest {
+    required int32 requestId = 12;
+    required fixed64 start = 10;
+    required RequestRecording request = 11;
+}
+
+message ActiveRequestList {
+    repeated ActiveRequest requests = 1;
+}
+
 message Recording {
     required fixed64 start = 3;
     required fixed64 stop = 4;
